@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/Morden.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../assets/fonts/Roboto-Medium.ttf);
+}
+
+$font-1: "font-1";
+$font-2: "font-2";
+
+$color-1: #374158;
+$color-2: #d76c58;
+$color-3: #222d41;
+$color-4: lightgray;
+$color-5: #7f5056;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-2;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin-top: 10px;
+  background: $color-3;
+}

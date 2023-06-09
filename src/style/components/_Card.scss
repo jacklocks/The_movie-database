@@ -1,0 +1,85 @@
+.card {
+  z-index: 1;
+  height: 800px;
+  width: 450px;
+  margin: 10px auto;
+  position: relative;
+  background: $color-1;
+  border: 10px ridge $color-3;
+  border-radius: 20px;
+  box-shadow: -3px 0px 24px 3px rgba(215, 108, 88, 0.75) inset;
+  -webkit-box-shadow: -3px 0px 24px 3px rgba(215, 108, 88, 0.75) inset;
+  -moz-box-shadow: -3px 0px 24px 3px rgba(215, 108, 88, 0.75) inset;
+  & .genre {
+    background: $color-3;
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: $color-4;
+  }
+  & .movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    & ul {
+      display: flex;
+      margin: 10px auto;
+      justify-content: center;
+      text-align: center;
+    }
+    & h4 {
+      text-align: center;
+      justify-content: flex-start;
+      width: 300px;
+      text-shadow: 4px 4px 2px $color-3;
+      color: $color-2;
+      font-size: 18px;
+      height: 40px;
+    }
+    & h5 {
+      color: $color-4;
+    }
+    & img {
+      height: 45vh;
+      width: fit-content;
+      object-fit: cover;
+      border-radius: 10px;
+      z-index: 0;
+      transform: translateY(-18px);
+      margin-top: 30px;
+    }
+    & p {
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      overflow: hidden;
+      margin: 10px auto;
+      color: $color-4;
+    }
+    & button {
+      position: absolute;
+      bottom: 10px;
+      background: $color-2;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      align-items: center;
+      padding: 8px;
+      width: 150px;
+      color: $color-1;
+    }
+    & .star {
+      color: rgb(207, 207, 17);
+      height: 15px;
+    }
+  }
+}
+.noFavoris {
+  color: $color-4;
+}
